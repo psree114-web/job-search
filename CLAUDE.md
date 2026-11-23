@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Sreemanth
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Sreemanth, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +10,94 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Sreemanth
+- **Location:** Remote (Sacramento, California area)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
-
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+  | English | Native/Professional fluency |
+- **CV language:** English
+- **Status:** Currently employed - seeking full-stack .NET roles
+- **LinkedIn headline:** "Senior Full Stack .NET Developer | 10+ Years Experience | Azure & Angular Expert"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Bachelor's in Computer Science** (2011-2015) - Acharya Nagarjuna University, India
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+
+- **Sr. Full Stack .NET Developer** (Apr 2026 - Present) - **Staples** (Framingham, MA - Remote)
+  - Designed and maintained scalable enterprise web applications using C#, ASP.NET Core, .NET 6/7/8, MVC, Web API
+  - Architected full-stack applications using Angular, TypeScript, JavaScript, HTML5, CSS3, Bootstrap
+  - Developed RESTful APIs and microservices with dependency injection, middleware, and exception handling
+  - Designed and optimized SQL Server databases with complex queries, stored procedures, and indexes
+  - Implemented authentication using JWT, OAuth 2.0, ASP.NET Core Identity, and RBAC
+  - Applied secure coding practices and vulnerability remediation for enterprise security
+
+- **Sr. Full Stack .NET Developer** (Mar 2025 - Apr 2026) - **State of California** (Sacramento, CA - Remote)
+  - Developed high-performance backend services with asynchronous programming and parallel processing
+  - Optimized Entity Framework Core queries using projections and async operations
+  - Implemented distributed caching with Redis and in-memory caching
+  - Designed event-driven workflows using Azure Service Bus and RabbitMQ
+  - Containerized .NET applications with Docker and supported Azure Functions
+
+- **Sr. Fullstack Developer** (Aug 2023 - Mar 2025) - **Prudential Financial** (Chicago, IL)
+  - Implemented advanced Angular features using RxJS, reactive forms, route guards
+  - Designed microservices-based solutions with independent service boundaries
+  - Developed reusable front-end components and shared Angular libraries
+  - Implemented centralized exception handling and structured logging
+  - Analyzed application performance using diagnostic tools and execution traces
+
+- **Full Stack Developer** (Dec 2019 - Jul 2023) - **Blue Cross Blue Shield** (Chicago, IL)
+  - Created and optimized SQL Server database objects for efficient data retrieval
+  - Developed Angular services, routing modules, and reactive forms
+  - Implemented JWT, ASP.NET Core Identity, and role-based access controls
+  - Collaborated in Agile/Scrum environments on enterprise applications
+  - Deployed and supported web applications on Microsoft Azure
+
+- **Software Developer** (Jun 2017 - Sep 2019) - **Delta Air Lines** (Atlanta, GA)
+  - Designed application workflows and shared utility modules
+  - Developed reusable API endpoints and service methods
+  - Implemented exception handling, logging, and diagnostic mechanisms
+  - Refactored legacy code using SOLID principles and separation of concerns
+  - Participated in technical discussions for implementation risk assessment
+
+- **Web API Developer** (Aug 2015 - May 2017) - **Yanasoftware** (India)
+  - Developed RESTful Web APIs using C# and ASP.NET Core Web API
+  - Implemented authentication using JWT and OAuth 2.0
+  - Designed SQL Server database operations with complex queries
+  - Created Swagger/OpenAPI documentation and implemented caching
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** C#, ASP.NET Core, .NET 6/7/8, .NET Framework, Web API, Angular, TypeScript, SQL Server
+- **Secondary:** Entity Framework Core, LINQ, Dapper, RxJS, RESTful APIs, Microservices, Docker, Azure
+- **Domain:** Enterprise Software, Financial Services, SaaS, Healthcare IT
+- **Software:** Visual Studio, Azure DevOps, GitHub, Swagger, Postman, SQL Server Management Studio
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
-
-### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
-
-### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- **Microsoft Azure Developer (AZ-204)** - Completed 2020
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Adaptability** - Successfully transitioned between different company cultures and technologies across 10+ years
+- **Problem-Solving** - Skilled at root-cause analysis for debugging and performance optimization issues
+- **Collaboration** - Experience working cross-functionally with business analysts, QA, DevOps teams
+- **Technical Leadership** - Mentoring on modern .NET practices and clean architecture patterns
+- **Strengths:** Deep full-stack expertise, cloud-native development, enterprise application architecture
+- **Growth areas:** Frontend architecture leadership, DevOps practices, mentoring engineering teams
+- **Thrives in:** Fast-paced environments with clear business impact, collaborative teams valuing code quality
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building scalable, maintainable enterprise applications that solve real business problems
+- Working with modern .NET technologies and cloud platforms (Azure/AWS)
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- **Financial Technology (FinTech):** Prudential, insurance tech, payment processing
+- **Enterprise SaaS:** Customer management, HR tech, business software
+- **Travel & Logistics:** Aviation, transportation platforms
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Positions requiring relocation (must be remote or Sacramento/Framingham area)
+- Companies with toxic culture or no growth path
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

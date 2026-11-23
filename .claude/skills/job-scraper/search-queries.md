@@ -1,7 +1,5 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
-
 ## Installed portal CLIs (primary for `/scrape`)
 
 `/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. None ship with AI Job Search: copy the ones for your market from [community-portals](https://github.com/ai-job-search-dev/community-portals) (e.g. `linkedin-search`, `freehire-search` under `portals/global/`), or build one with `/add-portal`. You do **not** need a matching `site:` line below for those CLIs to run.
@@ -13,10 +11,12 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 ## Search Sites
 
 Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by the community `linkedin-search` CLI once installed
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+- **linkedin.com/jobs** - LinkedIn job listings (filter: USA, Remote); covered by the community `linkedin-search` CLI once installed
+- **greenhouse.io** - Many companies use Greenhouse for their careers page
+- **lever.co** - Companies using Lever ATS
+- **workday.com** / **myworkdayjobs.com** - Enterprise employers using Workday
+- **smartrecruiters.com** - Large job board with corporate listings
+- **indeed.com** - General job board (USA-focused)
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
@@ -29,91 +29,98 @@ Each priority has two kinds of block. **Plain terms** blocks are what the portal
 
 **Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Full Stack .NET Developer
 
 These match your strongest and most desired career direction.
 
 #### Plain terms (portal CLIs)
 
 ```
-[YOUR_PRIMARY_JOB_TITLE_1]
-[YOUR_PRIMARY_JOB_TITLE_2]
-[YOUR_KEY_SKILL]
+Full Stack .NET Developer
+Senior .NET Developer
+ASP.NET Core Developer
+.NET Backend Developer
+Angular Developer
 ```
 
 #### WebSearch-only (`site:` fallback)
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
+site:linkedin.com/jobs "Full Stack .NET Developer" USA remote
+site:linkedin.com/jobs "Senior .NET Developer" USA remote
+site:linkedin.com/jobs "ASP.NET Core" "Angular" remote
+site:linkedin.com/jobs ".NET Developer" "SQL Server" remote
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: Financial Services Technology
 
-These match your domain expertise.
+These match your domain expertise in FinTech and financial services.
 
 #### Plain terms (portal CLIs)
 
 ```
-[YOUR_DOMAIN_KEYWORD_1]
-[YOUR_DOMAIN_KEYWORD_2]
+Financial Technology Developer
+FinTech Engineer
+Insurance Tech Developer
+Banking Software Engineer
+Healthcare IT Developer
 ```
 
 #### WebSearch-only (`site:` fallback)
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "Financial Technology" USA remote
+site:linkedin.com/jobs "Insurance Technology" .NET
+site:linkedin.com/jobs "Healthcare IT" "ASP.NET Core"
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 3: Cloud-Native Developer
 
-Adjacent roles you could pivot into.
+Adjacent roles you could pivot into with your Azure experience.
 
 #### Plain terms (portal CLIs)
 
 ```
-[YOUR_ADJACENT_TITLE_1]
-[YOUR_ADJACENT_TITLE_2]
+Azure Developer
+Cloud Software Engineer
+Cloud Native Developer
+Azure DevOps Engineer
 ```
 
 #### WebSearch-only (`site:` fallback)
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "Azure Developer" .NET USA remote
+site:linkedin.com/jobs "Cloud Native" "ASP.NET Core" "Docker"
 ```
 
-### Priority 4: Broader Technical / Consulting
+### Priority 4: Full-Stack Engineer
 
-Wider net for general technical roles.
+Broader net for general technical roles.
 
 #### Plain terms (portal CLIs)
 
 ```
-[YOUR_KEY_SKILL] developer
-technical consultant
+Full Stack Engineer
+Software Engineer
+Senior Software Engineer
 ```
 
 #### WebSearch-only (`site:` fallback)
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Full Stack Engineer" .NET remote
+site:linkedin.com/jobs "Senior Software Engineer" "C#" USA
 ```
 
 ## Location Filter
 
 When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+- USA (Remote)
+- Sacramento, CA
+- Framingham, MA
+- Chicago, IL
+- Atlanta, GA
 
 ## Language Filter
 
